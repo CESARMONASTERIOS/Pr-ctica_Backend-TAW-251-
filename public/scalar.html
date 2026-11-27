@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Práctica de API de cine · TAW-251</title>
+  <style>
+    .descarga {
+      margin: 0;
+      padding: 0.75rem 1rem;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <p class="descarga">
+    <a href="/práctica-api.json" download="cine-práctica-api.json">Descargar la especificación de la API (JSON)</a>
+  </p>
+  <div id="referencia"></div>
+  <script src="/docs/scalar.js"></script>
+  <script>
+    Scalar.createApiReference('#referencia', {
+      url: '/práctica-api.json',
+      theme: 'default',
+      operationTitleSource: 'path',
+      defaultOpenAllTags: true,
+      hideModels: true,
+      hideDownloadButton: true,
+      withDefaultFonts: false,
+      telemetry: false
+    })
+  </script>
+</body>
+</html>
